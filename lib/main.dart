@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,25 +14,39 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 91, 16, 41),
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Container(
-                color: Colors.white,
-                height: 100.0,
-                width: 100.0,
-                child: Text("Container 1"),
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/arij.jpg'),
+              ),
+              Text(
+                'Arij SALEH',
+                style: TextStyle(
+                  color: Colors.amberAccent,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "Software engineer",
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Container(
-                child: Text("Container 2"),
-                color: Colors.amber,
-                height: 100,
-                width: 100,
-              ),
-              Container(
-                color: Colors.red,
-                height: 100.0,
-                width: 100.0,
-                child: Text("Container 3"),
+                child: Row(
+                  children: [
+                    Icon(Icons.star, color: Colors.white),
+                    Text(
+                      "+55",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
