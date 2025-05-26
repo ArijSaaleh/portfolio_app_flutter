@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 91, 16, 41),
+        backgroundColor: const Color.fromARGB(255, 28, 33, 80),
         body: SafeArea(
           child: Column(
             children: [
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
               Text(
                 'Arij SALEH',
                 style: TextStyle(
-                  color: Colors.amberAccent,
+                  color: const Color.fromARGB(255, 255, 255, 255),
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
@@ -30,63 +30,47 @@ class MyApp extends StatelessWidget {
               Text(
                 "Software engineer",
                 style: TextStyle(
-                  color: Colors.blue,
+                  color: const Color.fromARGB(255, 255, 255, 255),
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(10),
-                color: Colors.red[900],
-
-                child: Row(
-                  children: [
-                    Icon(Icons.star, color: Colors.white),
-                    SizedBox(width: 15),
-                    Text(
-                      "+55",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+              Card(
+                color: Colors.indigo[300],
+                child: ListTile(
+                  leading: Icon(Icons.star, color: Colors.white),
+                  title: Text(
+                    "+55",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(10),
-                color: Colors.red[900],
-                child: Row(
-                  children: [
-                    Icon(Icons.phone, color: Colors.white),
-                    SizedBox(width: 15),
-                    Text(
-                      "+216 26 290 351",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+              Card(
+                color: Colors.indigo[300],
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.white),
+                  title: Text(
+                    "+216 26 290 351",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(10),
-                color: Colors.red[900],
-                child: Row(
-                  children: [
-                    Icon(Icons.email, color: Colors.white),
-                    SizedBox(width: 15),
-                    Text(
-                      "arij.saleh.pro@gmail.com",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+              Card(
+                color: Colors.indigo[300],
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.white),
+                  title: Text(
+                    "arij.saleh.pro@gmail.com",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
