@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                "Software engineer",
+                "Software engineer UIUX",
                 style: TextStyle(
                   color: const Color.fromARGB(255, 255, 255, 255),
                   fontWeight: FontWeight.bold,
